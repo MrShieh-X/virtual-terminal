@@ -43,7 +43,7 @@ public class VirtualTerminal {
         OptionParser optionparser = new OptionParser();
         optionparser.allowsUnrecognizedOptions();
         OptionSpec<String> userOptionSpec = optionparser.accepts("user").withRequiredArg().ofType(String.class).defaultsTo(defaultUser.userName);
-        OptionSpec<File> rootPathOptionSpec = optionparser.accepts("root").withRequiredArg().ofType(File.class).defaultsTo(new File("."));
+        OptionSpec<File> rootPathOptionSpec = optionparser.accepts("root").withRequiredArg().ofType(File.class).defaultsTo(new File("/"));
         OptionSet optionSet = optionparser.parse(args);
         String user = getValue(optionSet, userOptionSpec);
         File file = getValue(optionSet, rootPathOptionSpec);
