@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="VirtualTerminal.main:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/VirtualTerminal_main_jar</output-path>
+    <root id="archive" name="VirtualTerminal.main.jar">
+      <element id="module-output" name="VirtualTerminal.main" />
+      <element id="extracted-dir" path="$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.sf.jopt-simple/jopt-simple/6.0-alpha-3/2ab1a73e1e22d2b73469362a0908a98644b681d/jopt-simple-6.0-alpha-3.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
