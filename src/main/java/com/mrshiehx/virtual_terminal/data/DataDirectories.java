@@ -8,7 +8,7 @@ public class DataDirectories {
     private DataDirectories() {
     }
 
-    public static File DATA = new File(ROOT, "data");
+    public static File DATA = new File(com.mrshiehx.virtual_terminal.VirtualTerminal.firstDirectory, "data");
     public static File OBJECTS = new File(DATA, "objects");
     public static File TERMINAL = new File(DATA, "terminal");
     public static File OBJECTS_USERS = new File(OBJECTS, "users");
@@ -17,7 +17,7 @@ public class DataDirectories {
     public static File CLASSES = new File(DATA, "classes");
 
     public static void init() {
-        DATA = new File(ROOT, "data");
+        DATA = new File(com.mrshiehx.virtual_terminal.VirtualTerminal.firstDirectory, "data");
         OBJECTS = new File(DATA, "objects");
         OBJECTS_USERS = new File(OBJECTS, "users");
         TERMINAL = new File(DATA, "terminal");

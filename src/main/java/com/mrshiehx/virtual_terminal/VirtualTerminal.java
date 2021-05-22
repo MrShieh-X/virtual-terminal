@@ -27,6 +27,7 @@ import static com.mrshiehx.virtual_terminal.utils.JOptSimpleUtils.getValue;
 
 public class VirtualTerminal {
     public static File currentDirectory = new File(".");
+    public static final File firstDirectory = new File(".");
     public static User currentUser;
     public static boolean echoOpen = true;
     public static final User defaultUser;
@@ -39,7 +40,7 @@ public class VirtualTerminal {
     }
 
     public static void main(String[] args) throws NoSuchFieldException, IllegalAccessException {
-        System.out.println("------------------- Welcome to Virtual Terminal 1.0 -------------------");
+        //System.out.println("------------------- Welcome to Virtual Terminal 1.0 -------------------");
         OptionParser optionparser = new OptionParser();
         optionparser.allowsUnrecognizedOptions();
         OptionSpec<String> userOptionSpec = optionparser.accepts("user").withRequiredArg().ofType(String.class).defaultsTo(defaultUser.userName);
